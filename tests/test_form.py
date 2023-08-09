@@ -16,7 +16,7 @@ def test_positive(browser_management):
     browser.element('.react-datepicker__day--019').click()
     browser.element('#subjectsInput').should(be.blank).type('Maths').press_enter()
     browser.element("[for='hobbies-checkbox-3']").click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath('files/san-diego-night-view-united-states-boats.jpeg'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('files/picss.jpeg'))
     browser.element('#currentAddress').type("Moscow Region")
     browser.element('#react-select-3-input').type('ncr').press_enter()
     browser.element('#react-select-4-input').type('delhi').press_enter()
